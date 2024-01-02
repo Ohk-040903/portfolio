@@ -27,9 +27,9 @@ library.add(fab, faCheckSquare, faCoffee)
         <h1 className='contactpagetitle'>Contact Me</h1>
         <span className='contactdescription'>Please fill out the form below to discuss any work opportunities.</span>
         <form className='contactform' method='post' ref={form} onSubmit={sendEmail}>
-            <input type='text' className='name' placeholder='Your name' name='your_name' />
-            <input type='email' className='email' placeholder='Your Email ID' name='your_email' />
-            <input type='text' className='phone'placeholder='Your Contact Number' name='your_contact'/>
+            <input type='text' className='name' placeholder='Your name' name='your_name' required />
+            <input type='email' className='email' placeholder='Your Email ID' name='your_email' required/>
+            <input type='text' className='phone'placeholder='Your Contact Number' name='your_contact' required/>
             <textarea name='message' className='msg' rows='5' placeholder='Any Message for me'></textarea>
             <button className='submitbtn' type='submit' value='send'>Submit</button>
             </form>
