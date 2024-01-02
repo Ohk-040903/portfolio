@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(30, 30, 30);
+    color: white;
+    overflow: hidden;
+    overflow-y: scroll;
+    .cursor {
+        pointer-events: none;
+        position: fixed;
+        display: block;
+        border-radius: 0;
+        mix-blend-mode: difference;
+        top: 0;
+        left: 0;
+        z-index: 9999999999999999;  
+      }
+      
+      .circle {
+          position: absolute;
+          display: block;
+          width: 26px;
+          height: 26px;
+          border-radius: 20px;
+          background-color: #fff;
+      }
+      .mainVid{
+        position: fixed;
+        z-index: -1;
+        opacity: 100%;
+        mix-blend-mode: multiply;
+      }
+}
