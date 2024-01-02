@@ -1,0 +1,110 @@
+#works{
+    max-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 70vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 1rem;
+}
+.workstitle{
+    margin: 1rem 0;
+    font-size: 3rem;
+    overflow: hidden;
+}
+.worksdescription{
+    font-weight: 300;
+    font-size: 1rem;
+    overflow: hidden;
+}
+.worksimgs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+    width: 100vw;
+    max-width: 65rem;
+}
+.worksimg{
+    object-fit: cover;
+    height: 7rem;
+    margin: 1rem;
+}
+@media screen and (max-width:730px) {
+    .worksdescription{
+        font-weight: 300;
+        font-size: .8rem;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width:540px) {
+    .workstitle{
+        margin: 1rem 0;
+        font-size: 2rem;
+        overflow: hidden;
+    }
+    .worksdescription{
+        font-weight: 300;
+        font-size: .8rem;
+        overflow: hidden;
+    }
+    .worksimg{
+        object-fit: cover;
+        height: 5rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width:365px) {
+    .workstitle{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+    .worksdescription{
+        font-weight: 300;
+        font-size: .7rem;
+        overflow: hidden;
+    }
+    .worksimg{
+        object-fit: cover;
+        height: 3rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-height:710px) {
+    .workstitle{
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        overflow: hidden;
+    }
+    .worksdescription{
+        font-weight: 300;
+        font-size: .7rem;
+        overflow: hidden;
+    }
+    .worksimg{
+        object-fit: cover;
+        height: 4rem;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width:300px) and (max-height:710px) {
+    .workstitle{
+        margin: 1rem 0;
+        font-size: 1rem;
+        overflow: hidden;
+    }
+    .worksdescription{
+        font-weight: 300;
+        font-size: .5rem;
+        overflow: hidden;
+    }
+    .worksimg{
+        object-fit: cover;
+        height: 3rem;
+        margin: 1rem;
+    }
+}
